@@ -1,0 +1,103 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>2048小游戏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 主要面板 -->
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="clearfix">
+            <!-- 2048标题 -->
+            <h1 class="title">2048</h1>
+            <!-- 得分栏 -->
+            <div class="scores-container clearfix">
+                <div class="addition">+</div>
+                <span class="score">0</span>
+                <span class="best">0</span>
+            </div>
+        </header>
+        <!-- 游戏部分上方标语 -->
+        <div class="above-game clearfix">
+            <p class="join-game">Join the numbers and get to the <strong>2048 tile</strong>!</p>
+            <a class="new-game" href="#">New Game</a>
+        </div>
+        <!-- 游戏主体部分 -->
+        <div class="game-container">
+            <!--   失败时弹出游戏提醒 默认不显示 -->
+            <div class="game-message">
+                <p>Game over!</p>
+                <div class="lower">
+                    <a href="#" class="retry">Try again</a>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                    <div class="grid-cell"></div>
+                </div>
+            </div>
+            <!-- 生成的砖块 -->
+            <div class="tile-container">
+                <div class="grid-row">
+                    <div class=" grid-cell empty x0y0" x=0 y=0></div>
+                    <div class=" grid-cell empty x0y1" x=0 y=1></div>
+                    <div class=" grid-cell empty x0y2" x=0 y=2></div>
+                    <div class=" grid-cell empty x0y3" x=0 y=3></div>
+                </div>
+                <div class="grid-row">
+                    <div class=" grid-cell empty x1y0" x=1 y=0></div>
+                    <div class=" grid-cell empty x1y1" x=1 y=1></div>
+                    <div class=" grid-cell empty x1y2" x=1 y=2></div>
+                    <div class=" grid-cell empty x1y3" x=1 y=3></div>
+                </div>
+                <div class="grid-row">
+                    <div class=" grid-cell empty x2y0" x=2 y=0></div>
+                    <div class=" grid-cell empty x2y1" x=2 y=1></div>
+                    <div class=" grid-cell empty x2y2" x=2 y=2></div>
+                    <div class=" grid-cell empty x2y3" x=2 y=3></div>
+                </div>
+                <div class="grid-row">
+                    <div class=" grid-cell empty x3y0" x=3 y=0></div>
+                    <div class=" grid-cell empty x3y1" x=3 y=1></div>
+                    <div class=" grid-cell empty x3y2" x=3 y=2></div>
+                    <div class=" grid-cell empty x3y3" x=3 y=3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
